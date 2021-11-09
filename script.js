@@ -51,7 +51,7 @@ Il rivenditore deve
     function calcolaIva() {
     var iva = document.getElementById("iva");
     var importo = document.getElementById("importo").value;
-    var ivaCalcolata = Math.floor(importo * 0.22).toFixed(2);
+    var ivaCalcolata = Math.floor(importo * 0.22).toFixed(2); 
     iva.innerHTML = ivaCalcolata;
 }
 
