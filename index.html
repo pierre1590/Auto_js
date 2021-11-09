@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">    
+    <head>
+        <title>Esercizio auto</title>
+        <link rel="stylesheet" href="style.css" type="text/css">
+    </head>
+    <body>
+        <h1>Esercizio auto</h1>
+        <!--Form per aggiungere una riga al libro contabile-->
+            <section id="add">
+                <form>
+                    <h2>Aggiunta di una riga nel libro</h2>
+                    <label for="descrizione">Descrizione</label><br/>
+                        <input type="text" name="descrizione" id="descrizione"/><br/>
+                    <label for="cliente">Cliente</label><br/>
+                        <select name="cliente" id="cliente">
+                            <option value="">Seleziona un cliente</option>
+                        </select>
+                        <br/>
+                    <label for="importo">Importo</label>
+                        <input type="importo" name="importo" id="importo" oninput="calcolaIva(this.value)"/><br/>
+                    <!---Visualizza l'iva dopo aver digitato l'importo-->     
+                             <label for="iva">IVA:</label><h4 id="iva"></h4> 
+                    <label for="data">Data</label><br/> 
+                        <input type="date" name="data" id="data"/><br/>
+                    <label for="tipo">Tipo</label><br/>
+                        <select name="tipo" id="tipo">
+                            <option value="entrata">Entrata</option>
+                            <option value="uscita">Uscita</option>
+                        </select><br/>
+                        <button type="submit" id="btnSave">Salva</button>
+                </form>
+            </section>
+        <script src="script.js"></script>
+    </body>
+</html>
